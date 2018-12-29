@@ -7,8 +7,8 @@ module.exports = (passport) => {
     let options = {};
     options.jwtFromRequest = ExtractJwt.fromAuthHeaderWithScheme("jwt");
     options.secretOrKey = config.secret;
-    passport.use(new JwtStrategy(options, (jwt_payload, done) => {
-        User.getUserById(jwt_payload._id, (err, user) => {
+    passport.use(new JwtStrategy(options, function (jwt_payload, done) {
+        User.findOne({ id: jwt_payload.sub }, function (err, user) {
             if (err) {
                 return done(err, false);
             }
