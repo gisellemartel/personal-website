@@ -1,18 +1,22 @@
-// dependencies
+// external dependencies
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const passport = require("passport-jwt");
 const mongoose = require("mongoose");
+// custom module dependencies
 const config = require("./src/config/database");
 
 //connect app to MongoDB database
 mongoose.connect(config.database);
-
 //on connection
 mongoose.connection.on("connected", () => {
     console.log("connected to database " + config.database);
+});
+//on connection error
+mongoose.connection.on("error", (error) => {
+    console.log("Error connecting to database: " + error);
 });
 
 //initialize app
