@@ -34,14 +34,8 @@ export const appRoutes: Routes = [
     component: ContactComponent
   },
   {
-<<<<<<< HEAD
     path: 'home',
     component: HomeComponent
-=======
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
->>>>>>> merged changes from dev
   },
   {
     path: '**',
