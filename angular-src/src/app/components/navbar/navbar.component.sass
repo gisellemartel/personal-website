@@ -1,5 +1,5 @@
 .main-navbar
-    text-align: center
+    text-align: left
     height: 200px
 
     a
@@ -24,9 +24,8 @@
         margin-left: 9em
 .nav
     float: right
-    text-align: right
     position: relative
-    top: 80px
+    top: 50px
     right: 0
 
     li 
@@ -34,11 +33,16 @@
     font-weight: lighter
     max-width: 198spx
 
-    li > a:hover 
+    a:hover 
         color: black
 
-    li > a:active
+    a:active
         color: #911cbc
 
-    li > a
-        color: inherit
+    .nav-link
+        color: black
+
+
+.nav .current-section
+    color: #911cbc
+
