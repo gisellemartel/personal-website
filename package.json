@@ -11,11 +11,12 @@
     "bcryptjs": "*",
     "body-parser": "*",
     "cors": "*",
-    "express": "*",
+    "express": "^4.16.4",
     "jsonwebtoken": "*",
     "mongoose": "*",
     "passport": "*",
-    "passport-jwt": "*"
+    "passport-jwt": "*",
+    "path": "^0.12.7"
   },
   "author": "Giselle Martel",
   "license": "MIT",
