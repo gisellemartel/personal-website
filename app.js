@@ -6,11 +6,11 @@ const path = require("path");
 const app = express();
 const port = 8080;
 
-app.use(express.static(path.join(__dirname, "/src")));
+app.use(express.static("./dist/src"));
 
 //set route into app homepage
 app.get("/", (req, res) => {
-    res.send("invalid endpoint");
+    res.sendFile(path.join("./dist/src/index.html"));
 });
 
 //start server
