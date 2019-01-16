@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as  AppRoutes from '../../app.module';
-import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +7,10 @@ import { RouterModule, Routes } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
-    console.log(AppRoutes.AppModule);
   }
 
 }

@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeComponent } from '../home/home.component';
-import { AboutComponent } from '../about/about.component';
-import { ProjectsComponent } from '../projects/projects.component';
-import { MusicComponent } from '../music/music.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -11,9 +8,9 @@ import { MusicComponent } from '../music/music.component';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) {
+  }
 
   ngOnInit() {
-
   }
 }

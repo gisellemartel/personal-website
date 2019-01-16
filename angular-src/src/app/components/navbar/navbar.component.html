@@ -1,19 +1,25 @@
-<div class="container main-navbar">
-  <h1><a class="nav-link" routerLink="/home">Giselle Martel</a></h1>
-  <h3><a href="https://www.github.com/gisellemartel">Developer</a> | <a href="../../assets/giselle-martel-transcript.pdf"
-      target="_blank">Student</a> | <a href="https://www.soundcloud.com/giselle-martel">Musician</a></h3>
+<div class="container-fluid main-navbar">
+  <div class="col-xs-12">
+    <h1><a class="nav-link" routerLink="/home">Giselle Martel</a></h1>
+    <h3><a href="https://www.github.com/gisellemartel">Developer</a> | <a href="../../assets/giselle-martel-transcript.pdf"
+        target="_blank">Student</a> | <a href="https://www.soundcloud.com/giselle-martel">Musician</a></h3>
+  </div>
+  <div class="col-xs-12 col-sm-4">
+    < <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" [ngClass]="{'current-section': route.url === '/about'}" routerLink="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/projects" [ngClass]="{'current-section': route.url === '/projects'}">Software
+          Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/music" [ngClass]="{'current-section': route.url === '/music'}">Music & Sound
+          Design</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact" [ngClass]="{'current-section': route.url === '/contact'}">Contact</a>
+      </li>
+      </ul>
+  </div>
 </div>
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" routerLink="/about">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="/projects">Software Projects</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="/music">Music & Sound Design</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="/contact">Contact</a>
-  </li>
-</ul>
