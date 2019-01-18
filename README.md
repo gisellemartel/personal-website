@@ -1,1 +1,1 @@
-Giselle Martel's personal website repo
+Buidling a website to play around with the MEAN stack. A work in progress.
